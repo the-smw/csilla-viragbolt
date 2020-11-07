@@ -2,10 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Csilla virágbolt | Veszprém</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="icon" href="assets/favicon (2).ico" type="image/icon type">
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Clicker+Script&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/3d47a07c59.js" crossorigin="anonymous"></script>
   <script src="scripts.js" defer></script>
   <script>window.jQuery || document.write('<script src="jquery-2.1.1.min.js"><\/script>')</script>
@@ -15,7 +17,7 @@
   <div class="container">
     <header>
       <h1>Csilla Virágbolt</h1>
-      <p>8200 Veszprém temető</p>
+      <span>- Veszprém -</span>
       <img class="divider" src="assets/divider.png" alt="divider">
     </header>
     <nav>
@@ -26,13 +28,16 @@
       </ul>
     </nav>
     <main>
-      <section class="phrase">
+      <div class="phrase">
         <img class="sample" src="assets/sample-img.png" alt="show">
-        <p class="little-prince">"Ha valaki szeret egy virágot, amely csak egyetlen példányban létezik a csillagmilliókon: ez épp elég neki, hogy boldog legyen, ha a csillagokra pillant." <small>(Antoine de Saint-Exupéry)</small></p>
-      </section>
+        <div class="text">
+          <p class="little-prince">"Ha valaki szeret egy <span class="highlight">virágot</span>, amely csak egyetlen példányban létezik a csillagmilliókon: ez épp elég neki, hogy <span class="highlight">boldog</span> legyen, ha a csillagokra pillant."</p>
+          <small>(Antoine de Saint-Exupéry)</small>
+        </div>
+      </div>
       <div class="mobile-list"> <!-- Structure for SMALL SCREEN -->
         <section class="item-1">
-          <a class="toggle-one" href="#">Csokrok <i class="fas fa-chevron-down"></i></a>
+          <a class="toggle-one">Csokrok <i class="fas fa-chevron-down"></i></a>
           <div class="hidden one">
             <div class="dropdown">
               <img class="show" src="assets/minimal.jpg" alt="example">
@@ -42,7 +47,7 @@
           </div>
         </section>
         <section class="item-2">
-          <a class="toggle-two" href="#">Koszorúk <i class="fas fa-chevron-down"></i></a>
+          <a class="toggle-two">Koszorúk <i class="fas fa-chevron-down"></i></a>
           <div class="hidden two">
             <div class="dropdown">
               <img class="show" src="assets/minimal.jpg" alt="example">
@@ -52,7 +57,7 @@
           </div>
         </section>
         <section class="item-3">
-          <a class="toggle-three" href="#">Asztaldíszek <i class="fas fa-chevron-down"></i></a>
+          <a class="toggle-three">Asztaldíszek <i class="fas fa-chevron-down"></i></a>
           <div class="hidden three">
             <div class="dropdown">
               <img class="show" src="assets/minimal.jpg" alt="example">
@@ -62,7 +67,7 @@
           </div>
         </section>
         <section class="item-4">
-          <a class="toggle-four" href="#">Sírcsokrok <i class="fas fa-chevron-down"></i></a>
+          <a class="toggle-four">Sírcsokrok <i class="fas fa-chevron-down"></i></a>
           <div class="hidden four">
             <div class="dropdown">
               <img class="show" src="assets/minimal.jpg" alt="example">
@@ -72,7 +77,7 @@
           </div>
         </section>
         <section class="item-5">
-          <a class="toggle-five" href="#">Vágott virág <i class="fas fa-chevron-down"></i></a>
+          <a class="toggle-five">Vágott virág <i class="fas fa-chevron-down"></i></a>
           <div class="hidden five">
             <div class="dropdown">
               <img class="show" src="assets/minimal.jpg" alt="example">
@@ -82,7 +87,7 @@
           </div>
         </section>
         <section class="item-6">
-          <a class="toggle-six" href="#">Cserepes <i class="fas fa-chevron-down"></i></a>
+          <a class="toggle-six">Cserepes <i class="fas fa-chevron-down"></i></a>
           <div class="hidden six">
             <div class="dropdown">
               <img class="show" src="assets/minimal.jpg" alt="example">
