@@ -1,0 +1,174 @@
+/*--------------*\
+*
+*  BASE STYLES
+*
+\*--------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('assets/back.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Alice', serif;
+  color: #595959;
+}
+
+
+@media (max-width: 1024px) {
+  body {
+  background: url('assets/back.jpg') no-repeat right center fixed;
+  background-size: cover;
+  }
+}
+
+
+
+
+
+/*-----------*\
+*
+*    LAYOUT
+*
+\*-----------*/
+
+.container {
+  display: grid;
+  width: 75vw;
+  height: 100vh;
+  margin: 0 auto;
+  grid-template-columns: 100%;
+  grid-template-rows: 20vh auto 1fr;
+  grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
+
+
+header {grid-area: header;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+
+
+
+
+
+/*==== HEADER STYLES ====*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  background-color: rgba(173, 199, 189, .7);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+
+
+
+/*==== FOOTER STYLES ====*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(173, 199, 189, .6);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+
+
+
+/*------------*\
+*
+*  TYPOGRAPHY
+*
+\*------------*/
+
+h1 {
+  color: #ffffff;
+  font-size: 7vh;
+  font-family: 'Clicker Script', cursive;
+  line-height: 1.2;
+  letter-spacing: .225rem;
+  margin-top: 1rem;
+}
+
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 10vh;
+  }
+}
+
+
+
+span {
+  color: #ffffff;
+  font-size: 2.5vh;
+  line-height: 1.1;
+  letter-spacing: 0.125rem;
+}
+
+
+
+.footer-text {
+  line-height: 1.1;
+}
+
+
+
+
+
+/* Text decoration */
+
+
+.footer-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+
+
+/*----------*\
+*
+*   IMAGES
+*
+\*----------*/
+
+.divider {
+  width: 50%;
+  height: 2vh;
+  object-fit: cover;
+  margin-top: 2vh;
+  margin-bottom: 1rem;
+}
+
+
+@media (min-width: 768px) {
+  .divider {
+    width: auto;
+  }
+}
